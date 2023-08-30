@@ -4,7 +4,7 @@ import cookieParser from "cookie-parser";
 import authRoute from "./routes/auth.js";
 import userRoute from "./routes/users.js";
 import videoRoute from "./routes/videos.js";
-import commentRoute from "./routes/users.js";
+import commentRoute from "./routes/comments.js";
 
 const app = express();
 
