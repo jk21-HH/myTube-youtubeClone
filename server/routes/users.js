@@ -10,6 +10,7 @@ import {
 } from "../controllers/user.js";
 
 import { verifyToken } from "./../verifyToken.js";
+import { verifySubscription } from "../verifySubscription.js";
 
 const router = express.Router();
 
@@ -27,7 +28,7 @@ router.get("/find/:id", getUser);
 
 // subscribe a user
 
-router.put("/subscribe/:id", verifyToken, subscribe);
+router.put("/subscribe/:id", verifyToken, verifySubscription, subscribe);
 
 // unsubscribe a user
 
